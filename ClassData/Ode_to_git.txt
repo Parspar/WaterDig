@@ -1,8 +1,26 @@
-Oh git! You make me feel insane!
+Oh no git! You make me feel insane!
 You speak in riddles and are a pain.
 
+
+
 You make each class into a slog,
+<<<<<<< main
 and leave me after in a fog!
 
 Yet still I'll try to get the gist,
 With my head held high and my hand in fist
+=======
+and leave me beaten like a fog.
+
+
+
+Yet still I'll try to get the gist,
+
+With my head held high and my hand in fist
+
+It is not in vain to fork in twain
+
+a project lain before you
+
+Mat
+>>>>>>> main
