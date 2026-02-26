@@ -1,38 +1,102 @@
-# DP00BC26 Methods in data in water digitalization and sustainable management 2026
-This repository contains code sprints for Water Digitalization, a methods course for DigitaL Waters PhD pilot students.
+# WaterDig
 
-Introduction to data science methods for environmental analysis. Topics covered include reproducible scientific computing (bash scripting for data management, git for version control, GitHub for code collaboration and distribution); open geospatial data sources; common structures of environmental data; space/time applications of supervised machine learning (in R and Python); reproducible computational pipelines; repository design and publication; and best practices for high-performance computing using a JupyterHub virtual research environment.
+## Name
+Parsa Parvizi
 
-To use this repository: 
-1. Log onto GitHub.com using your registered email and password
-2. Click “Fork” in the upper right corner.
-3. Use git clone to copy it into the DIWA DataLab
-4. Identify the code sprint assigned for the day
-5. Work through the code to the best of your ability.
-6. To submit, push any modifications to the assignment to your forked repository (git add, git commit, git push)
+## Contact Information
+Email: parsa.parvizi@oulu.fi  
+GitHub: https://github.com/Parspar  
 
+## Organizational Affiliation
+University of Oulu  
+Water, Energy and Environmental Engineering   Unit (WE3)
 
-New assignments and solution keys will be added weekly, so we'll be working through upstream pulls and merges in class.
+## Professional Links
+- GitHub: https://github.com/Parspar
+- LinkedIn: Parsa Parvizi | LinkedIn
+- Google Scholar: ‪Parsa Parvizi‬ - ‪Google Scholar‬
 
-To install required packages to run notebooks in this repository, first use terminal to create a new conda environment named "waterdig:"
+# Project Overview
 
-    conda create -n waterdig 
-    
-Activate this environment (note, if you are running this on a personal computer instead of a server, you will use `conda activate` instead of `source activate`):
+## Problem Statement
+Water systems in northern and boreal environments are highly dynamic and sensitive to climate change. Understanding soil moisture dynamics is essential for sustainable water resource management, carbon cycling studies, and ecosystem protection.
+## Challenge Statement
+Soil moisture dynamics are difficult to measure directly due to:
+- High spatial and temporal variability  
+- Seasonal snow influence and snow melt regime
+- Limited observation points and hard work in field
+- Complex subsurface heterogeneity and linkage
 
-    source activate waterdig  
+## Solution Statement
+This project integrates hydrological data analysis, modeling tools, and digital workflows to better understand and visualize water system behavior in subarctic catchments.
 
-Install all packages listed in the requirements.txt file:
+## Objectives
+1. Analyze hydrological datasets.
+2. Apply reproducible data science workflows.
+3. Investigate soil moisture dynamics.
+4. Develop visualization tools for environmental data.
+5. Ensure reproducibility using Git and structured workflows.
+---
+# Literature Review
+- Freeze & Harlan (1969) – Blueprint for physically-based hydrological modeling  
+- Marttila et al. (2021) – Subarctic catchment hydrology in Pallas  
+-Nousu et al. (2024) – Soil moisture modeling in Pallas
+---
+# Research Questions
+The planned analyses focus on the following research questions:
+1.	How do spatial and temporal patterns of soil moisture vary across the Pallas Lake catchment at the landscape scale?
+2.	How do lateral groundwater flow and snowmelt processes influence soil moisture regimes and their spatial distribution?
+3.	How well does SpaFHy-2D reproduce observed soil moisture patterns when evaluated against soil moisture datasets?
+4.	How sensitive are simulated soil moisture dynamics to groundwater and snow process representations under contrasting hydrometeorological conditions?
+---
 
-    pip install -r requirements.txt 
-    
-Enable the "waterdig" environment to be discoverable as a kernel in Jupyter Notebooks:
+# Data Sources
 
-    python -m ipykernel install --user --name=waterdig --display-name "waterdig" 
+- Meteorological forcing data
+- Soil moisture measurements
+- Stream discharge records
 
-When you open notebook in this repository, select "waterdig" as a kernel using the upper righthand menu.
+(Data stored in `ClassData/` folder.)
 
+---
 
-Did these resources help your research? Spread the word! Preferred citation: 
+# Methods
 
-[Carter, E., Hultquist, C., & Wen, T. (2023). GRRIEn analysis: a data science cheat sheet for earth scientists learning from global earth observations. Artificial Intelligence for the Earth Systems, 2(2), 220065.](https://journals.ametsoc.org/downloadpdf/view/journals/aies/2/2/AIES-D-22-0065.1.pdf) 
+- Data preprocessing in Python
+- Statistical analysis
+- Hydrological modeling – Spatial Forest Hydrological Model (SpaFHy-2D)
+- Visualization using matplotlib
+- Version control with Git
+
+---
+
+# Repository Structure
+
+WaterDig/
+│
+├── ClassData/        # Input datasets
+├── CodeSprints/      # Jupyter notebooks and exercises
+├── README.md
+└── MIT License
+Citation:
+Parvizi, P. (2026). WaterDig Repository. https://github.com/Parspar/WaterDig
+---
+
+# Reproducibility
+Results Summary
+•	Reproducible hydrological workflows created
+•	Improved understanding of soil moisture dynamics in northern regions
+•	Structured digital water research repository
+
+## Run in CSC JupyterHub
+
+1. Open Jupyter environment
+2. Navigate to CodeSprints/
+3. Run notebooks sequentially
+
+## Run Locally
+
+```bash
+git clone https://github.com/Parspar/WaterDig.git
+cd WaterDig
+pip install -r requirements.txt
